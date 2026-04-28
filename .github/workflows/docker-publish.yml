@@ -22,7 +22,7 @@ jobs:
       - name: Build e Push da imagem
         uses: docker/build-push-action@v5
         with:
-          context: ./exemplosula/exemplo-to-do/exemplo-to-do
-          file: ./exemplosula/exemplo-to-do/exemplo-to-do/Dockerfile
+          context: ./exemplosula/exemplo-to-do
+          file: ./exemplosula/exemplo-to-do/Dockerfile
           push: true
           tags: gabrielgelde/todo-app:latest
