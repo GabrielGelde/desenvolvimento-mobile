@@ -73,6 +73,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="light" />
 
+      <Text style={styles.titulo}>LISTA TAREFAS</Text>
       <Text style={styles.data}>{dataHoje}</Text>
       <Text style={styles.subtitulo}>
         {incompletas.length} incompletas, {realizadas.length} realizadas
@@ -130,7 +131,7 @@ export default function App() {
           <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
             <Pressable style={styles.caixaModal} onPress={e => e.stopPropagation()}>
 
-              <Text style={styles.tituloModal}>Nova Tarefa</Text>
+              <Text style={styles.tituloModal}>Tarefa Nova</Text>
 
               <TextInput
                 style={styles.input}
@@ -184,6 +185,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#0d0d1f',
     paddingTop: 64,
     paddingHorizontal: 24,
+  },
+  titulo: {
+    color: '#fff',
+    fontSize: 22,
+    fontWeight: '700',
+    marginBottom: 4,
   },
   data: {
     color: '#fff',

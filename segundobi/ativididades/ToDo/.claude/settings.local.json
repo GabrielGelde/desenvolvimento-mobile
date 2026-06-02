@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/gabri/OneDrive/Documentos/Projects/desenvolvimento-mobile/**)",
+      "Read(//mnt/c/Users/gabri/OneDrive/Documentos/Projects/**)"
+    ]
+  }
+}
