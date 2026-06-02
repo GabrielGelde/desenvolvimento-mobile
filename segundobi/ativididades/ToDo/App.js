@@ -73,7 +73,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="light" />
 
-      <Text style={styles.titulo}>LISTA TAREFAS</Text>
+      <Text style={styles.titulo}>LISTA TAREFA</Text>
       <Text style={styles.data}>{dataHoje}</Text>
       <Text style={styles.subtitulo}>
         {incompletas.length} incompletas, {realizadas.length} realizadas
