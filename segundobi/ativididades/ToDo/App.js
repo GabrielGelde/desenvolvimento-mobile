@@ -107,7 +107,7 @@ export default function App() {
             />
             <View>
               <Text style={[styles.nomeTarefa, styles.nomeRiscado]}>{tarefa.nome}</Text>
-              <Text style={[styles.categoriaTarefa, { color: '#3a3a55' }]}>
+              <Text style={[styles.categoriaTarefa, { color: '#494967' }]}>
                 {tarefa.emoji} {tarefa.categoria}
               </Text>
             </View>
