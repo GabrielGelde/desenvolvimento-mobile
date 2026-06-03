@@ -1,4 +1,4 @@
-name: Publicar imagem no Docker Hub e fazer deploy no Azure
+name: Build and Push Docker Image
 
 on:
   push:
@@ -27,9 +27,3 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo-app:latest
 
-      - name: Fazer deploy no Azure App Service
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: gabrielgelde/todo-app
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          images: gabrielgelde/todo-app:latest
