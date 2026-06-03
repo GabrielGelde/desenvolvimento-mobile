@@ -23,7 +23,7 @@ jobs:
       - name: Construir e enviar a imagem
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: exemplosaula/trabalho01/exemplo-to-do
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo-app:latest
 
