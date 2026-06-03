@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div>
-      <h1>LISTA DE TAREFAS</h1>
+      <h1>Lista de Tarefas</h1>
 
       <input
         type="text"
